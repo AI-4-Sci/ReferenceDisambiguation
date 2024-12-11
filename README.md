@@ -51,6 +51,7 @@ The full data is not immediately publicly available, as it is being used for an 
 - To extract top-keywords for each topic, we follow the methodology from BERTopic [1], where we use a c-TF-IDF algorithm [2] to extract the top-keyword for each of the top-20 topics in our clusters.
 ### Annotation (Section 4.3 in the paper): 
 - Prior to the annotation, individual training sessions were held with the annotators to examine examples and counterexamples and ensure that the labeling task was understood correctly.
+- During annotation, annotators answered two questions: Q1 (*"Does the tweet mention a SINGLE scientific study? If not, move on to the next tweet"*), and Q2 (*"Does the tweet text mention the candidate study?"*). Q2 was answered only if Q1 = "Yes". In Round 1, annotators directly answered Q2 on samples where Q1 was answered 'Yes' by a majority vote (at least 2 out of 3). In Round 2, to try to sample more data, we conducted two iterations.  In the first iteration, all annotators labeled tweets by themselves. Then we checked the agreement on Q1 = "Yes" samples and collected the cases where at least two annotators answered "Yes" and at least one annotator answered "No". For those cases, the Q1 answer was consolidated as "Yes". Those tweets were then redistributed for a second iteration, this time only to annotators who had previously answered 'No' to Q1.
 
 
 ## Publication
