@@ -5,12 +5,13 @@ This repository contains the dataset, annotation framework and supplementary res
 
 __Table of contents:__
 - [Directory Structure](#directory-structure)
-- [Data](#data)
+- [Data and Samples for Reviewers](#data-and-samples-for-reviewers) (WWW short-paper submission)
 - [Publication](#publication)
 - [Reproducibility](#reproducibility)
+  - [Data Analysis](#analysis)
   - [Annotation](#annotation)
 - [Licensing](#licensing)
-- [Contact](#credits)
+- [Contact](#contact)
 - [Acknowledgment](#acknowledgment)
 - [References](#references)
 
@@ -20,23 +21,33 @@ __Table of contents:__
 This repository contains the following directories and files:
 
 1. **data**
-   1. **sample_explicit_references.tsv** samples from the explicit references
-   2. **sample_implicit_references.tsv** samples from the manually annotated implicit references
-   3. **full_explicit_references.tsv** the explicit references *TO BE ADDED*
-   4. **full_implicit_references.tsv** the manually annotated implicit references *TO BE ADDED*
-3. **data_analysis** supplementary material for the preliminary data analysis (see Section 3 of the research paper)
-   1. **topic_clusters.png** HDBSCAN clusters of SPECTER embeddings of study titles, used to determine the top20 topics from the CORD-19 corpus
-   2. **top20_topic_plots** temporal distribution plots for the top20 topics, each plot compares the distribution of explicit and implicit references 
-   3. **topic_keywords_top50_studies.tsv** keywords used to sample candidate implicit references before annotation
-   4. **topic_stats.tsv** statistics computed for each reference-type for all topics. Metrics include number of tweets and Pearson correlation
-4. **annotation_protocol_examples.pdf** the annotation framework provided to the annotators, along with definitions and examples provided to annotators
-9. **README.md** this file
+   1. **samples_for_reviewers.tsv**: <u>samples for reviewers for the WWW short-paper submission</u>
+   3. **full_explicit_references.tsv**: the explicit references *(TO BE ADDED)*
+   4. **full_implicit_references.tsv**: the manually annotated implicit references *(TO BE ADDED)*
+3. **data_analysis**: supplementary material for the preliminary data analysis (see Section 3 of the research paper)
+   1. **topic_clusters.png**: HDBSCAN clusters of SPECTER embeddings of study titles, used to determine the top20 topics from the CORD-19 corpus
+   2. **top20_topic_plots**: temporal distribution plots for the top20 topics, each plot compares the distribution of explicit and implicit references 
+   3. **topic_keywords_top50_studies.tsv** keywords used to sample candidate implicit references before annotation *(TO BE ADDED)*
+   4. **topic_stats.tsv**: statistics computed for each reference-type for all topics. Metrics include number of tweets and Pearson correlation
+4. **annotation_protocol_examples.pdf**: the annotation framework provided to the annotators, along with definitions and examples provided to annotators
+9. **README.md**: this file
 
-## Data
-The full data is not immediately publicly available, as it is being used for an upcoming CheckThat! Lab which we organize at CLEF2025. However, samples are already available for reviewers (see data/sample_explicit_references.tsv and data/sample_implicit_references.tsv). The full data will be made publicly available before the WWW camera-ready deadline.
+## Data & Samples for Reviewers
+Our TweetCite corpus consists of tweet-study pairs, where tweets reference papers from CORD-19. Tweets contain two distinct reference-types: explicit references (where the URLs are deleted to approximate implicit references), and manually annotated implicit references. Here are examples of both reference-types for a common scientific publication:
+- **Scientific publication:** "Effectiveness of Covid-19 Vaccines against the B.1.617.2 (Delta) Variant"
+    - **Explicit references**:
+        - *"only modest differences in vaccine effectiveness were noted with the delta variant as compared with the alpha variant after the receipt of two vaccine doses . ' https://pubmed.ncbi.nlm.nih.gov/34289274/"*
+        - *"great article - synopsis : 2 doses of pfizer vaccine effective against delta variant at 88 % compared to 94 % against original covid - 19 strain ! can't stop at 1 dose #covidvaccine effectiveness of covid - 19 vaccines against the b . 1.617 . 2 ( delta ) variant | nejm https://pubmed.ncbi.nlm.nih.gov/34289274/"*
+    - **Implicit references**:
+        - *"peer-reviewed in the new england journal of medicine regarding delta ( b . 1.617 . 2 ): • pfizer is ~ 90 % effective • astrazeneca is ~ 70 % effective this falls in line with vaccine efficacy of other variants . yes , the vaccines are indeed effective against delta."*
+
+The full data is not immediately publicly available, as it is being used for an upcoming CheckThat! Lab which we organize at CLEF2025. However, samples are already available for reviewers at:
+- data/samples_for_reviewers.tsv
+
+**The full data will be made publicly available before the WWW camera-ready deadline.**
 
 ## Reproducibility
-### Preliminary data analysis (Section 3 in the paper): 
+### Data analysis (Section 3 in the paper): 
 - To extract top-keywords for each topic, we follow the methodology from BERTopic [1], where we use a c-TF-IDF algorithm [2] to extract the top-keyword for each of the top-20 topics in our clusters.
 ### Annotation (Section 4.3 in the paper): 
 - Prior to the annotation, individual training sessions were held with the annotators to examine examples and counterexamples and ensure that the labeling task was understood correctly.
@@ -46,7 +57,7 @@ The full data is not immediately publicly available, as it is being used for an 
 <!-- TODO: Update with correct information once we uploaded the paper somewhere -->
 Please cite the following paper if you are using the dataset or annotation framework, or citing empirical results from the paper:
 
-1. *TO BE ADDED*
+1. *(TO BE ADDED)*
 
 ## Licensing
 This dataset is published under CC BY 4.0 license. It allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator (https://creativecommons.org/licenses/by/4.0/)
