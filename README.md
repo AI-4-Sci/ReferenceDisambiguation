@@ -41,10 +41,10 @@ Our TweetCite corpus consists of tweet-study pairs, where tweets reference paper
     - **Implicit references**:
         - *"peer-reviewed in the new england journal of medicine regarding delta ( b . 1.617 . 2 ): • pfizer is ~ 90 % effective • astrazeneca is ~ 70 % effective this falls in line with vaccine efficacy of other variants . yes , the vaccines are indeed effective against delta."*
 
-The full data is not immediately publicly available, as it is being used for an upcoming CheckThat! Lab which we organize at CLEF2025. However, samples are already available for reviewers at:
+The full data is not immediately available, as it is being used for an upcoming CheckThat! Lab which we organize at CLEF2025. However, samples are already available for reviewers at:
 - data/samples_for_reviewers.tsv
 
-**The full data will be made publicly available before the WWW camera-ready deadline.**
+**The full data will be archived at the GESIS research center and can be assessed for analysis via the GESIS Secure Data Center: https://www.gesis.org/en/services/processing-and-analyzing-data/analysis-of-sensitive-data/secure-data-center-sdc.**
 
 ## Reproducibility
 ### Data analysis (Section 3 in the paper): 
