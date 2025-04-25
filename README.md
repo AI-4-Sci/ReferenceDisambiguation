@@ -1,11 +1,11 @@
 # ReferenceDisambiguation
 
 <!-- Short Introduction what this repo is about -->
-This repository contains the dataset, annotation framework and supplementary results for the work *"Disambiguation of Implicit Scientific References on X"*, currently under review at the **ACM Web Conference (WWW 2025)**.
+This repository contains the dataset, annotation framework and supplementary results for the work *"Disambiguation of Implicit Scientific References on X"*, currently under review at the **ACM HyperText Conference (HTEXT 2025)**.
 
 __Table of contents:__
 - [Directory Structure](#directory-structure)
-- [Data and Samples for Reviewers](#data-and-samples-for-reviewers) (WWW short-paper submission)
+- [Data and Samples for Reviewers](#data-and-samples-for-reviewers) **(HyperText short-paper submission)**
 - [Publication](#publication)
 - [Reproducibility](#reproducibility)
   - [Data Analysis](#analysis)
@@ -21,7 +21,7 @@ __Table of contents:__
 This repository contains the following directories and files:
 
 1. **data**
-   1. **samples_for_reviewers.tsv**: <u>samples for reviewers for the WWW short-paper submission</u>
+   1. **samples_for_reviewers.tsv**: <u>samples for reviewers for the HyperText short-paper submission</u>
    3. **full_explicit_references.tsv**: the explicit references *(TO BE ADDED)*
    4. **full_implicit_references.tsv**: the manually annotated implicit references *(TO BE ADDED)*
 3. **data_analysis**: supplementary material for the preliminary data analysis (see Section 3 of the research paper)
